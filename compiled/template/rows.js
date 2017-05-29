@@ -39,9 +39,10 @@ module.exports = function (h, that) {
 
     rows.push(h(
       'tr',
-      { 'class': rowClass, on: {
-          click: that.rowWasClicked.bind(that, row)
-        }
+      { 'class': rowClass, 
+			//on: {
+      //    click: that.rowWasClicked.bind(that, row)
+      //  }
       },
       [columns, ' ']
     ));
